@@ -1,0 +1,36 @@
+:root{
+    --black: #0e0e0e;
+    --white: rgb(241, 241, 241);
+}
+*,::after,::before{
+    box-sizing: border-box;
+}
+html{
+    margin: 0;
+    padding: 0;
+    background-color: var(--black);
+}
+body{
+    color: var(--white);
+}
+/*HEADER=================================*/
+header{
+    background-image: url(IMAGENES/Central/imagenCentral.png);
+    background-size: 100% auto;
+}
+nav#navBar-desktop{
+    padding-top: 60px;
+}
+header nav ul li{
+    list-style: none;
+    color: var(--white);
+}
+header nav ul li a{
+    color: var(--white);
+    text-decoration: none;
+    padding: 6px;
+    margin: 0 10px;
+    font-weight: 700;
+    font-size: 1.2rem;
+}
+/*MAIN====================================*/
