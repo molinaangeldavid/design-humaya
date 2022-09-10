@@ -97,6 +97,14 @@ button#button-hamburguer i{
 #products{
     color:var(--white);
 }
+.container-cards{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 0;
+}
+/* .card-product{
+    width: 30%;
+} */
 .products-title{
     width: 100%;
     background-color: rgb(138, 129, 129);
@@ -108,7 +116,7 @@ button#button-hamburguer i{
     margin-bottom: 0;
 }
 #products img{
-    width: 250px;
+    width: 100%;
     height: 250px;
     object-fit: cover;
 }
