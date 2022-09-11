@@ -180,4 +180,16 @@ footer{
     background: linear-gradient(0deg, #0a0909, #232323);
     padding: 50px;
     color: var(--white);
+    display: flex;
+    justify-content: space-around;
+}
+footer li{
+    list-style: none;
+}
+footer li a{
+    text-decoration: none;
+    color: var(--white);
+}
+footer i{
+    font-size: 1.5rem;
 }
