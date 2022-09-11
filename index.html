@@ -7,6 +7,9 @@
   <title>HUMAYA</title>
   <!--Estilos de Bootstrap y propios-->
   <!-- CSS only -->
+  <!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
   <link rel="stylesheet" href="styles.css">
@@ -28,10 +31,10 @@
           </a>
         </li>
         <li>
-          <a href="#">Sucursales</a>
+          <a href="#recetas">Recetas</a>
         </li>
         <li>
-          <a href="#">Contacto</a>
+          <a href="#contacto">Contacto</a>
         </li>
       </ul>
       <button id="button-hamburguer" onclick="showMenu()">
@@ -56,7 +59,7 @@
       <div class="container-cards">
         <div id="product1" class="card-product">
           <div>
-            <img src="IMAGENES/Productos/Producto1.png" />
+            <img src="IMAGENES/Productos/5ZDHVGAHIFEJZDWFTZBKOCWMNI.jpg" />
           </div>
           <div class="description1 black-description">
             <span class="title-card">Dulce de leche tradicional</span>
@@ -87,12 +90,117 @@
             <button class="info-button">+info</button>
           </div>
         </div>
+        <div id="product4" class="card-product">
+          <div>
+            <img src="IMAGENES/Productos/EPUBUCGTY5F6JH33JD2GP7F2HQ.jpg" />
+          </div>
+          <div class="description3 black-description">
+            <span class="title-card">Dulce de almendras</span>
+            <p class="content-card">Dulce de leche del mejor fruto seco, almedras frescas y endulzadas con azucar organica. La opcion vegana llego para quedarse</p>
+            <span class="footer-card">Presentacion en frasco de vidrio de 280gr.</span>
+            <button class="info-button">+info</button>
+          </div>
+        </div>
+        <div id="product5" class="card-product">
+          <div>
+            <img src="IMAGENES/Productos/maicenas.jpg" />
+          </div>
+          <div class="description3 black-description">
+            <span class="title-card">Alfajores de maicena</span>
+            <p class="content-card">Alfajores con coco rallado,relleno de 2cm de pura tentacion. Opciones entre dulce de leche tradicional, light, choconutt o vegano</p>
+            <span class="footer-card">Presentacion en caja de 6 y 12 alfajores</span>
+            <button class="info-button">+info</button>
+          </div>
+        </div>
+        <div id="product6" class="card-product">
+          <div>
+            <img src="IMAGENES/Productos/torta.jpg" />
+          </div>
+          <div class="description3 black-description">
+            <span class="title-card">Chocotorta</span>
+            <p class="content-card">Chocotorta con nuestros mejores dulce de leche y galletitas elaboradas por nuestros mejores chefs. Tambien en version vegana</p>
+            <span class="footer-card">Presentacion en empaque detallado.</span>
+            <button class="info-button">+info</button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="recetas">
+      <div class="locals-title">
+        <h2>Recetas</h2>
+      </div>
+    </section>
+    <section id="contacto">
+      <div class="contacto-title">
+        <h2>Contacto</h2>
+      </div>
+      <div class="flex-contacto">
+        <img src="IMAGENES/volodymyr-hryshchenko-V5vqWC9gyEU-unsplash.jpg" alt="contacto">
+        <div class="container-form">
+          <span>Dejanos tu consulta y nuestro personal se pondra en contacto a la brevedad</span>
+          <hr />
+          <form action="#">
+            <div class="mb-3">
+              <label for="exampleFormControlInput1" class="form-label">Nombre</label>
+              <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="John Doe">
+            </div>
+            <div class="mb-3">
+              <label for="exampleFormControlInput1" class="form-label">Email</label>
+              <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="JohnDoe@example.com">
+            </div>
+            <div class="mb-3">
+              <label for="exampleFormControlTextarea1" class="form-label">Comentario</label>
+              <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+            </div>
+            <div class="d-grid gap-2 d-md-block">
+              <button class="btn btn-primary btn-lg w-100 mt-5" type="button">Enviar</button>
+            </div>
+          </form>
+        </div>
       </div>
     </section>
   </main>
   
   <footer>
-    
+    <div class="imagen-footer">
+      <img src="IMAGENES/Logo/LogoHumaya100x100.png" alt="">
+    </div>
+    <div>
+      <ul>
+        <li><a href="#">Menu</a></li>
+        <li><a href="#">Inicio</a></li>
+        <li><a href="#products">Productos</a></li>
+        <li><a href="#recetas">Recetas</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+    </div>
+    <div>
+      <ul>
+        <li><a href="#">Navegacion</a></li>
+        <li><a href="#">Preguntas Frecuentes</a></li>
+        <li><a href="#">Distribuidores</a></li>
+        <li><a href="#">Prensa</a></li>
+        <li><a href="#">Recetas exclusivas</a></li>
+      </ul>
+    </div>
+    <div>
+      <ul>
+        <li>Redes</li>
+        <li>
+          <i class="bi bi-instagram"></i>
+        </li>
+        <li>
+
+        </li>
+        <li>
+
+        </li>
+      </ul>
+    </div>
+    <div>
+
+    </div>
+
   </footer>
 </body>
 </html>
