@@ -27,6 +27,9 @@ header{
 nav#navBar-desktop{
     padding-top: 2vh;
 }
+#navBar-mobile{
+    display: none !important;
+}
 header nav ul li{
     list-style: none;
     color: var(--white);
@@ -42,18 +45,7 @@ header nav ul li a{
 header a:hover{
     color: var(--brown);
 }
-/*HAMBURGUER ICON*/
-header nav button#button-hamburguer{
-    background-color: transparent;
-    border-style: solid;
-    /* padding: 15px 20px; */
-    display: none;
-}
-button#button-hamburguer i{
-    font-size: 1.8rem;
-    padding: 5px;
-    color: var(--white);
-}
+
 .presentation {
     display: flex;
     flex-direction: column;
@@ -67,21 +59,21 @@ button#button-hamburguer i{
 .presentation h1{
     text-transform: uppercase;
     letter-spacing: .3rem;
-    font-size: 2.6rem;
+    font-size: 2.2vw;
     font-weight: 400;
     text-align: center;
     text-shadow: black 2px 2px 2px;
 }
 .presentation p{
     margin-top: 40px;
-    font-size: 1.5rem;
+    font-size: 1.6vw;
     line-height: 1.8;
     text-shadow: black 1px 1px 1px;
 }
 .presentation button{
     margin-top: 40px;
     margin-left: auto;
-    font-size: 1.8rem;  
+    font-size: 2.2vw;  
     background-color: var(--black-hover);
     color: var(--white);
     border-radius: 40px;
@@ -195,6 +187,14 @@ button#button-hamburguer i{
     margin: auto;
     padding: 30px 0;
 }
+.enviar-button{
+    background-color: var(--black);
+    color: var(--white);
+}
+.enviar-button:hover{
+    background-color: #3c2401 !important;
+    color: var(--white) !important;
+}
 /*FOOTER ===========================*/
 footer{
     background: linear-gradient(0deg, #0a0909, #232323);
@@ -212,4 +212,67 @@ footer li a{
 }
 footer i{
     font-size: 1.5rem;
+}
+
+/*BreakPoints*/
+@media only screen and (max-width: 1100px) and (min-width: 750px){
+    .container-cards{
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+@media screen and (max-width:749px){
+    .container-cards{
+        grid-template-columns: repeat(1,1fr);
+    }
+    .flex-contacto{
+        flex-direction: column;
+    }
+    #contacto img{
+        width: 100%;
+    }
+    .container-form{
+        padding: 10px 20px;
+    }
+    .presentation{
+        width: 80%;
+        position: static;
+        margin: auto;
+    }
+    .presentation h1,.presentation p ,.presentation button{
+        font-size: 1rem;
+    }
+    #navBar-desktop{
+        display: none !important;
+    }
+    #navBar-mobile{
+        display: block !important;
+        padding: 20px 0 20px;
+        margin-right: 40px;
+    }
+    #button-hamburguer{
+        border: 2px solid var(--black);
+        border-radius: 5px;
+        background-color: var(--brown);
+    }
+    #hidden-b-mobile{
+        display: none;
+    }
+    #button-hamburguer:active{
+        transform: translateY(4px);
+    }
+    #button-hamburguer i{
+        font-size: 1.8rem;
+        padding: 5px;
+    }
+}
+@media only screen and (max-width:500px){
+    .container-recetas{
+        width:100%;
+    }
+    .container-recetas img{
+        width: 10%;
+    }
+    .footer-menu2{
+        display: none;
+    }
 }
